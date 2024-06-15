@@ -14,16 +14,17 @@
 body
 {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 main
 {
-    display: flex;
-    max-width: 85%;
-    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding: 10px;
+    gap: 10px;
     justify-content: center;
+    max-width: 85%;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -77,16 +78,6 @@ header h1
     transition: 0.5s;
     background-color: var(--primary-color);
     color: black;
-}
-
-.boxs
-{
-    display: grid;
-    grid-template-columns: 2fr 0.5fr;
-    padding: 10px;
-    gap: 10px;
-    justify-content: center;
-    width: 85%;
 }
 
 .card
