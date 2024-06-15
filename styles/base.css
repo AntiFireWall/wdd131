@@ -114,9 +114,22 @@ header h1
 
 .about-me
 {
-    display: flex;
-    align-items: center;padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    padding: 10px;
     justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.about-me h2
+{
+    grid-column: span 2;
+    justify-self: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
 }
 
 .about-me img
