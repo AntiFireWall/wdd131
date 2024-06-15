@@ -96,7 +96,7 @@ header h1
     border: 3px solid var(--secondary-color);
     border-radius: 10px;
     height: auto;
-    width: fi;
+    width: fit-content;
 }
 
 .card ul
