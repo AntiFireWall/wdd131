@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    --primary-color: rgb(0, 187, 255);
+    --secondary-color: black;
+
+    --heading-font: 'Open Sans', serif;
+    --paragraph-font: 'Raleway', serif;
+    margin: 0;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main
+{
+    display: flex;
+    width: 85%;
+    align-self: center;
+    justify-content: center;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: var(--heading-font);
+}
+
+p, a
+{
+    font-family: var(--paragraph-font);
+    text-decoration: none;
+}
+
+header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+header h1
+{
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-bar
+{
+    display: flex;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+}
+
+.nav-bar a
+{
+    color: white;
+    font-size: 25px;
+    flex: auto;
+    text-align: center;
+}
+
+.nav-bar a:hover
+{
+    transition: 0.5s;
+    background-color: var(--primary-color);
+    color: black;
+}
+
+.boxs
+{
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+    width: 85%;
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--secondary-color);
+    border-radius: 10px;
+    height: auto;
+    width: fi;
+}
+
+.card ul
+{
+    margin: auto 0;
+}
+
+.card h1
+{
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.about-me
+{
+    display: flex;
+    align-items: center;padding: 10px;
+    justify-content: center;
+}
+
+.about-me img
+{
+    width: 200px;
+    height: auto;
+    border: 1px solid black;
+}
+
+.about-me p
+{
+    width: 350px;
+    font-size: 20px;
+}
+
+.country
+{
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.country h2
+{
+    grid-column: span 2;
+    justify-self: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+.country p
+{
+    min-width: 350px;
+    font-size: 20px;
+    padding: 10px;
+}
+
