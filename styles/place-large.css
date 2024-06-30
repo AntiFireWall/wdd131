@@ -1,0 +1,58 @@
+@media screen and (min-width: 1000px){
+    .data
+    {
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        background-color: rgba(255, 255, 255, 0.721);
+        padding: 15px;
+        column-gap: 5px;
+        width: 300px;
+        border-bottom: 0;
+    }
+
+    .data h2
+    {
+        grid-column: span 2;
+        margin: 10px 0;
+        padding: 5px 15px;
+        background-color: 	#0033A0;
+        position: relative;
+        left: -30px;
+        color: white;
+        text-align: left;
+    }
+
+    .weather
+    {
+        position: absolute;
+        right: 100px;
+        bottom: 100px;
+        background-color: rgba(255, 255, 255, 0.721);
+        padding: 15px;
+        column-gap: 5px;
+        width: 300px;
+    }
+
+    .weather h2
+    {
+        grid-column: span 2;
+        margin: 10px 0;
+        padding: 5px 15px;
+        background-color: 	#0033A0;
+        position: relative;
+        left: -30px;
+        color: white;
+        text-align: left;
+    }
+
+    .weather h2::after
+    {
+        content: " ☀️";
+    }
+
+    #sun-icon
+    {
+        display: none;
+    }
+}

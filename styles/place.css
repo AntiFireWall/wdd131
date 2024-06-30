@@ -1,0 +1,113 @@
+:root
+{
+    --heading-font: 'Roboto', serif;
+    --paragraph-font: 'Roboto Condensed', serif;
+}
+
+body
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: var(--heading-font);
+}
+
+h2
+{
+    font-size: 30px;
+}
+
+p, input, li, a, figcaption
+{
+    font-family: var(--paragraph-font);
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+header
+{
+    display: flex;
+    background-image: url("/images/640px-flag.webp");
+    background-size: 100% 100px;
+    background-repeat: no-repeat;
+    height: 100px;
+    justify-content: center;
+}
+
+header h1
+{
+    height: fit-content;
+    padding: 5px;
+    align-self: center;
+    font-size: 75px;
+    color: rgb(255, 255, 255);
+}
+
+main
+{
+    position: relative;
+}
+
+.data
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px;
+    column-gap: 5px;
+    border-bottom: 1px solid black;
+}
+
+.data h2
+{
+    grid-column: span 2;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.labels
+{
+    text-align: right;
+}
+
+.weather
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.weather h2
+{
+    grid-column: span 2;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.weather h2::after
+{
+    content: none;
+}
+
+#sun-icon
+{
+    grid-column: span 2;
+    width: 80px;
+    justify-self: center;
+    margin: 10px 0;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #0033A0;
+    margin-top: auto;
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+}

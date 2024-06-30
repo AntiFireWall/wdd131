@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page about Armenia">
+    <meta name="author" content="Daniel Ayvazyan">
+    <title>Armenia</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Armenia</h1>
+    </header>
+    <main>
+        <picture class="hero-img">
+            <source srcset="images/1620px-mount_ararat.webp" media="(min-width: 1000px)" width="100%">
+            <source srcset="images/700px-republic-square.webp" media="(min-width: 500px)" width="100%">
+            <img src="images/400px-Matenadaran_aerial.webp" alt="Matenadaran" width="100%" height="auto">
+        </picture>
+        <div class="data">
+            <h2>Data</h2>
+            <div class="labels">
+                <p><strong>Area:</strong></p>
+                <p><strong>Population:</strong></p>
+                <p><strong>Capital:</strong></p>
+                <p><strong>Language:</strong></p>
+                <p><strong>Currency:</strong></p>
+                <p><strong>Time Zone:</strong></p>
+                <p><strong>Calling Code:</strong></p>
+                <p><strong>Internet TLD:</strong></p>
+            </div>
+            <div class="values">
+                <p>29,743 sq km</p>
+                <p>3,015,400</p>
+                <p>Yerevan</p>
+                <p>Armenian</p>
+                <p>Armenian Dram</p>
+                <p>GMT+4</p>
+                <p>+378</p>
+                <p>.am</p>
+            </div>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/sun_icon.svg" alt="sun" id="sun-icon">
+            <div class="labels">
+            <p><strong>Temperatura:</strong></p>
+            <p><strong>Conditions:</strong></p>
+            <p><strong>Wind:</strong></p>
+            <p><strong>Wind Chill:</strong></p>
+            </div>
+            <div class="values">
+            <p><span id="temp">10</span> &#176;C</p>
+            <p>Clear</p>
+            <p><span id="wind">5</span> km/h</p>
+            <p><span id="wind-chill"></span> &#176;C</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Daniel Ayvazyan | Armenia</p>
+        <p id="lastModified"></p>
+        <script src="scripts/getdates.js"></script>
+    </footer>
+</body>
+</html>
