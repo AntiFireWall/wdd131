@@ -111,3 +111,15 @@ footer
     text-align: center;
     color: white;
 }
+
+img[src="images/400px-Matenadaran_aerial.webp"]
+{
+    width: 100%;
+    height: auto;
+}
+
+source
+{
+    width: 100%;
+    height: auto;
+}
