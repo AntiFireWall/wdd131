@@ -32,7 +32,7 @@ p, input, li, a, figcaption
 header
 {
     display: flex;
-    background-image: url("/images/640px-flag.webp");
+    background-image: url("../images/640px-flag.webp");
     background-size: 100% 100px;
     background-repeat: no-repeat;
     height: 100px;
