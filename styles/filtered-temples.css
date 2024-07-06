@@ -135,7 +135,8 @@ footer
 
 .label
 {
-    color: rgb(184, 73, 73);
+    color: rgb(202, 0, 0);
+    font-weight: bold;
 }
 
 .card h3 
