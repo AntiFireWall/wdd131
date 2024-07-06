@@ -123,17 +123,14 @@ footer
     text-align: center;
     margin: 5px 0;
     background-color: rgb(237, 237, 237);
-    width: 100%;
-    height: auto;
-    max-width: 380px;
+    width: 350px;
 }
 
 .card img
 {
     margin-top: 10px;
-    width: 100%;
-    height: auto;
-    max-width: 400px;
+    width: 340px;
+    height: 190px;
 }
 
 .label
