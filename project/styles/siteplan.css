@@ -1,0 +1,55 @@
+*
+{
+    margin: 0;
+}
+
+:root
+{
+    --heading-font: ;
+    --text-font: ;
+
+    --main-color: ;
+    --secondary-color: ;
+    --accent-color: ;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 80%;
+}
+
+h2
+{
+    margin-bottom: 5px;
+}
+
+.color
+{
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    max-width: 120px;
+    max-height: 180px;
+    grid-template-rows: repeat(3, 30px);
+    text-align: right;
+    align-items: center;
+}
+
+.color p
+{
+    height: fit-content;
+    text-align: right;
+}
+
+#main-color,
+#secondary-color,
+#accent-color
+{
+    width: 100px;
+    height: 25px;
+    justify-self: center;
+}
