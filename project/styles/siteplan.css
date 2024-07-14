@@ -5,12 +5,12 @@
 
 :root
 {
-    --heading-font: ;
-    --text-font: ;
+    --heading-font: 'Roboto', serif;
+    --text-font: 'Open Sans', serif;
 
-    --main-color: ;
-    --secondary-color: ;
-    --accent-color: ;
+    --main-color: #0F0F0F;
+    --secondary-color: #535353;
+    --accent-color: #888888;
 }
 
 body
@@ -21,6 +21,28 @@ body
     margin-top: 25px;
     margin-left: 25px;
     width: 80%;
+    background-color: rgb(227, 227, 227);
+}
+
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: var(--heading-font);
+}
+
+h2, h3, h4, h5, h6
+{
+    color: var(--secondary-color);
+}
+
+p, label, input
+{
+    font-family: var(--text-font);
+}
+
+label
+{
+    color: var(--accent-color);
 }
 
 h2
@@ -31,7 +53,7 @@ h2
 .color
 {
     display: grid;
-    grid-template-columns: repeat(2, 120px);
+    grid-template-columns: repeat(2, 150px);
     max-width: 120px;
     max-height: 180px;
     grid-template-rows: repeat(3, 30px);
@@ -52,4 +74,19 @@ h2
     width: 100px;
     height: 25px;
     justify-self: center;
+}
+
+#main-color
+{
+    background-color: var(--main-color);
+}
+
+#secondary-color
+{
+    background-color: var(--secondary-color);
+}
+
+#accent-color
+{
+    background-color: var(--accent-color);
 }

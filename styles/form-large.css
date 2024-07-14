@@ -1,0 +1,21 @@
+@media screen and (min-width: 900px) {
+    form
+    {
+        width: 382px;
+        background-color: rgb(192, 192, 192);
+    }
+
+    fieldset
+    {
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: lightgreen;
+    }
+    
+    #thank-you-msg
+    {
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 900px;
+    }
+}
