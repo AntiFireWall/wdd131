@@ -142,13 +142,6 @@ footer
     border-left: solid 5px lightgreen;
 }
 
-.optional
-{
-    border-left: solid 5px rgb(0, 106, 255);
-    padding-left: 5px;
-    border-radius: 5px;
-}
-
 #thank-you-msg
 {
     margin-top: 5rem;
