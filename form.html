@@ -20,12 +20,12 @@
     <main>
         <form method="get" action="/review.html">
         <fieldset>
-            <label for="product">Product Name<span class="required">*</span></label>
+            <label for="product"><span class="required">Product Name</span></label>
             <select name="product" id="product" required>
                 <option value="">Select Product</option>
             </select>
 
-            <label>Overall Rating<span class="required">*</span></label>
+            <label><span class="required">Overall Rating</span></label>
             <div id="rating">
                 <label>★<input type="radio" name="rating" id="rating1" value="1" required></label>
                 <label>★★<input type="radio" name="rating" id="rating2" value="2" required></label>
@@ -34,10 +34,10 @@
                 <label>★★★★★<input type="radio" name="rating" id="rating5" value="5" required></label>
             </div>
 
-            <label for="date">Date of Installation<span class="required">*</span></label>
+            <label for="date"><span class="required">Date of Installation</span></label>
             <input type="date" name="date" id="date" required>
 
-            <label>Which features did you find useful? (Check all that apply)</label>
+            <label><span class="optional">Which features did you find useful? (Check all that apply)</span></label>
             <div id="features">
             <label><input id="feature1" type="checkbox" name="durability" value="yes">Durability</label>
                 <label><input id="feature4" type="checkbox" name="design" value="yes">Design</label>
@@ -45,10 +45,10 @@
                 <label><input id="feature3" type="checkbox" name="performance" value="yes">Performance</label>
             </div>
 
-            <label for="review">Written Review <span class="optional">(Optional)</span></label>
+            <label for="review"><span class="optional">Written Review</span></label>
             <textarea name="review" id="review"></textarea>
 
-            <label for="name">Full Name  <span class="optional">(Optional)</span></label>
+            <label for="name"><span class="optional">Full Name</span></label>
             <input type="text" name="name" id="name">
         </fieldset>
 
