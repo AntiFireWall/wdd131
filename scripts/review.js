@@ -2,7 +2,7 @@ let reviewCount = getCount();
 async function test() {
     let count = await ++reviewCount;
     setCount();
-    console.log(reviewCount);
+    console.log(`Review Count: ${reviewCount}`);
 };
 
 function getCount(){
