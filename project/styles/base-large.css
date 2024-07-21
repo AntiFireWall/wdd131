@@ -1,0 +1,91 @@
+@media screen and (min-width: 1000px){
+    header
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 1rem;
+        color: white;
+        background-color: var(--main-color);
+    }
+
+    .nav-bar
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero h1
+    {
+        font-size: 80px;
+    }
+
+    .hero h2
+    {
+        font-size: 25px;
+        width: fit-content;
+    }
+
+    .services
+    {
+        display: grid;
+        grid-template-columns: minmax(400px, 800px) 400px;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 400px;
+        padding: 1rem 10%;
+        background-color: var(--secondary-color);
+    }
+
+    .services img
+    {
+        width: 400px;
+        height: auto;
+    }
+
+    .services div
+    {
+        font-size: auto;
+        width: 95%;
+        min-width: 400px;
+    }
+
+    .info
+    {
+        display: grid;
+        grid-template-columns: 400px minmax(400px, 800px);
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 400px;
+        padding: 1rem 10%;
+        background-color: var(--accent-color);
+    }
+
+    .info img
+    {
+        width: 400px;
+    }
+
+    .info div
+    {
+        display: flex;
+        flex-direction: column;
+        justify-self: left;
+        row-gap: 5px;
+        width: 95%;
+        min-width: 400px;
+    }
+
+    .contact h2
+    {
+        font-size: auto;
+    }
+
+    .container
+    {
+        display: none;
+    }
+}

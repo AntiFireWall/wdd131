@@ -1,8 +1,8 @@
 let reviewCount = getCount();
-function test() {
+function countReview() {
     let count = ++reviewCount;
     setCount();
-    console.log(`Review Count: ${reviewCount}`);
+    console.log(`Request Count: ${reviewCount}`);
 };
 
 function getCount(){
@@ -13,4 +13,4 @@ function setCount(){
     localStorage.setItem('count', JSON.stringify(reviewCount));
 }
 
-test();
+countReview();

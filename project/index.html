@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMS LLC | Home</title>
+    <meta name="description" content="home page for ADMS">
+    <meta name="author" content="Daniel ayvazyan">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <script src="scripts/hamburger.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>ADMS</h1>
+        <div class="container" onclick="openNav(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav class="nav-bar">
+            <a href="#">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact-info.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <h1>ADMS LLC</h1>
+            <h2>Accounting Services From Armenia</h2>
+            <a href="contact-info.html">Contact Us</a>
+        </div>
+        <div class="services">
+            <div>
+                <h2>Our Services</h2>
+                <p>
+                    We provide accounting and bookkeeping services, such as entering payable invoices, reconciliation, timesheet management, invoice batching and etc.
+                    We do this using the industry standard programs such as Sage Intacct, Quickbooks and Service Titan. We provide this service at affordable prices, which can be negotiated, and we do the work during your night shifts, so the work is done before your work hours.
+                </p>
+            </div>
+            <img src="images/accounting.webp" alt="accounting" loading="lazy" width="350px" height="206">
+        </div>
+        <div class="info">
+            <img src="images/yerevan.webp" alt="Picture of Yerevan"  loading="lazy" width="350px" height="233">
+            <div>
+                <h2>About Us</h2>
+                <p>We are a company that is located in Yerevan, Armenia and was founded in 2006. At first we provide different types of services, but ultimately ended up providing accounting and bookkeeping services for our clients.</p>
+                <a href="about-us.html">Learn More</a>
+            </div>
+        </div>
+        <div class="contact">
+            <h2>If our services interest you,</h2>
+            <a href="contact-info.html">Contact Us!</a>
+        </div>
+        <div class="worked-with">
+            <h2>We Worked With</h2>
+            <div id="icons">
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Daniel Ayvazyan | Armenia</p>
+        <p id="lastModified"></p>
+        <script src="scripts/getdates.js"></script>
+    </footer>
+</body>
+</html>

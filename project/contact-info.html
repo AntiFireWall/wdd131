@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMS LLC | Contact Info</title>
+    <meta name="description" content="Contact Info page for ADMS">
+    <meta name="author" content="Daniel ayvazyan">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>ADMS</h1>
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <nav class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="about-us.html">About Us</a>
+            <a href="contact-info.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+       <form method="get" action="thank-you.html">
+        <h1>Contact Us Form</h1>
+        <fieldset class="information">
+            <legend>Client Information</legend>
+
+            <label>First Name<input type="text" name="fname" required></label>
+            <label>Last Name<input type="text" name="lname" required></label>
+            <label>Phone Number (include area code)<input type="tel" name="phone" placeholder="+001 12345678" required></label>
+            <label>Email<input type="email" name="email" placeholder="name@mail.com" required></label>
+            
+            <div>Do you submit this request as an employee of a company?</div>
+            <label><input type="radio" name="employee" value="1"> Yes</label>
+            <label><input type="radio" name="employee" value="0"> No</label>
+        </fieldset>
+        <fieldset class="company">
+            <legend>Company Information</legend>
+
+            <label>Company Name<input type="text" name="name"></label>
+            <label>Position<input type="text" name="text"></label>
+        </fieldset>
+        <button type="submit">Send Request</button>
+       </form>
+       <div class="contact-info">
+        <h2>Contact information</h2>
+        <p>Phone: +001 12345678</p>
+        <p>Available: 12:00 AM - 8:30 PM (UTC+4)</p>
+        <p>Email: Coolfakeemail@epicfake.org</p>
+       </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Daniel Ayvazyan | Armenia</p>
+        <p id="lastModified"></p>
+        <script src="scripts/getdates.js"></script>
+    </footer>
+</body>
+</html>
